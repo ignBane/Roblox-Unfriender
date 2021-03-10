@@ -1,5 +1,5 @@
 # Roblox-Unfriender
-Unfriends everyone on your roblox friends list (Can ignore)
+Unfriends everyone on your roblox friends list (Can ignore friends)
 
 # Features
 - Ignore List<br>
