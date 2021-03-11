@@ -23,7 +23,7 @@ def csrf(x): # Based On https://github.com/suufi/noblox.js/blob/master/lib/util/
 def count_friends(x):
     user_id = session.get(f"https://api.roblox.com/users/get-by-username?username={username}").json()['Id']
 
-    friends = session.get("https://friends.roblox.com/v1/users/428845334/friends", headers={"Cookie":f".ROBLOSECURITY={x}"}).json()['data']
+    friends = session.get(f"https://friends.roblox.com/v1/users/{user_id}/friends", headers={"Cookie":f".ROBLOSECURITY={x}"}).json()['data']
 
     for friend in friends:
         if friend['displayName'] in ignore_friends:
